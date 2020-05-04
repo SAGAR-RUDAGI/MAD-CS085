@@ -79,3 +79,14 @@ public class SecondActivity extends AppCompatActivity {
     }
 
 }
+
+////////////////////////////////////////////////////////////////////////////////
+AndroidManifest.xml
+
+<activity android:name=".SecondActivity"
+            android:parentActivityName=".MainActivity">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+ </activity>
