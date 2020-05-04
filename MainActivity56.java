@@ -107,7 +107,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     }
 
     public void insert(String name, int marks) {
-        String query = " INSERT INTO student_table VALUES (null, "+name+" , "+marks+ ");";
+        String query = " INSERT INTO student_table VALUES (null, '"+name+"' , "+marks+ ");";
         db.execSQL(query);
     }
 
